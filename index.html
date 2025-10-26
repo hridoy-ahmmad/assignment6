@@ -71,9 +71,10 @@
         <h1 class="text-2xl font-bold text-center leading-[96px]">Choose our Trees</h1>
         <div class="lg:grid lg:grid-cols-12 md:grid-cols-12 gap-6 max-w-[1650px] mx-auto">
             <!-- Category -->
-            <div  class="category lg:col-span-2 md:col-span-2">
+            <div  class="category lg:col-span-2 md:col-span-2 ">
                 <h1 class="text-xl font-bold">Category</h1>
-                <div id="category" class="flex md:flex lg:block">
+                 <button id="allTrees" class="lg:text-xl font-semibold hover:bg-green-200 py-2 my-4 px-3 rounded-sm cursor-pointer">All trees</button>
+                <div id="category" class="flex md:flex lg:block sticky top-0">
                     <h3 class="lg:text-xl font-semibold hover:bg-green-200 py-2 my-4 px-3 rounded-sm cursor-pointer">All trees</h3>
                    
                 </div>
@@ -102,8 +103,7 @@
                             Add to Cart
                         </button>
                     </div>
-                    
-                    <!-- Repeat other cards here -->
+                  
                 </div>
             </div>
 
@@ -201,6 +201,59 @@
             </div>
         </div>
     </main>
+    <!-- You can open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <!-- Pop up -->
+    <div id="display-details" class="w-full  mx-auto bg-card-bg rounded-lg card-shadow text-gray-800">
+        
+        <!-- Header Section (Banyan Tree Title) -->
+        <h1 class="text-xl font-semibold p-4 pb-0">Banyan Tree</h1>
+
+        <!-- Image Container -->
+        <div class="p-4 pt-3">
+            <img 
+                src="https://placehold.co/600x400/3A4F41/F0F0F0?text=Banyan+Tree+Canopy" 
+                alt="A majestic Banyan tree canopy with sunlight filtering through."
+                class="w-full h-auto object-cover rounded-md"
+                onerror="this.onerror=null; this.src='https://placehold.co/400x300/4F46E5/FFFFFF?text=Image+Unavailable';"
+            >
+        </div>
+        
+        <!-- Details and Description Section -->
+        <div class="p-4 pt-1 space-y-3">
+            
+            <!-- Category & Price -->
+            <div>
+                <p class="text-sm">
+                    <span class="font-bold text-gray-700">Category:</span> Shade Tree
+                </p>
+                <p class="text-sm">
+                    <span class="font-bold text-gray-700">Price:</span> ₹1200
+                </p>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 leading-relaxed">
+                <span class="font-bold text-gray-700">Description:</span> A majestic shade tree with a vast canopy and iconic aerial roots. Revered in many cultures, it offers shelter to countless birds and animals.
+            </p>
+
+            <!-- Close Button (positioned to the bottom right) -->
+            <div class="text-right pt-2">
+                <button class="text-sm text-gray-500 hover:text-gray-700 font-medium px-3 py-1 transition-colors duration-150">
+                    Close
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+</dialog>
     <Footer class="bg-green-800 min-h-[600px] p-4 flex justify-center items-center">
         <div class="w-full max-w-xl p-8 rounded-xl mx-auto shadow-2xl bg-green-700">
 
@@ -233,6 +286,7 @@
 
         </div>
     </Footer>
+
  <div class="bg-green-900">
     <p class="text-center p-5 text-white"><i class="fa-regular fa-copyright"></i> 2025 Green Earth. All Rights Reserved.</p>
  </div>
@@ -240,3 +294,4 @@
 </body>
 
 </html>
+
